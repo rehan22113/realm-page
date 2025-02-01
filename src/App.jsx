@@ -190,7 +190,7 @@ const App = () => {
               </a>
         </div>
 
-        <div className=' fixed transition-all animate-bounce hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[39px] top-0 right-4 w-48'>
+        <div className=' fixed transition-all animate-bounce hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 right-4 w-48'>
               <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
                 <img src="/G_BUTTON.png" alt="annie" className=""/>
               </a>
