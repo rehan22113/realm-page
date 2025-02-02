@@ -1,12 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import './App.css'
 
 const App = () => {
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => console.error("Autoplay failed:", err));
+    }
+  }, []);
+
   const [showTooltip, setShowTooltip] = useState(false);
-  const [showRustTooltip, setShowRustTooltip] = useState(false);
   const copyText = "client.connect 122.176.96.37:28507";
 
   const handleCopy = () => {
@@ -28,8 +35,8 @@ const App = () => {
           <div className=" m-auto">
             <div className="w-full z-0 relative md:h-[40rem]">
               <div className="w-full h-full relative z-0">
-                <video className="relative z-[1] inline w-full h-full object-center object-cover" preload="metadata" data-src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" loop playsInline autoPlay aria-hidden="false" src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
-                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover blur-2xl" preload="none" aria-hidden="false" data-src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" loop playsInline autoPlay src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
+                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
+                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover blur-2xl" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
               </div>
             </div>
           </div>
