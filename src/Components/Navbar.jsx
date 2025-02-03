@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-   <header className="text-white !bg-transparent body-font sticky top-0 z-50">
+   <header className="text-white md:block hidden !bg-transparent body-font sticky top-0 z-[888]">
   <div className="container mx-auto flex flex-wrap py-5 px-5 flex-col md:flex-row items-center">
     <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
       <img src="/navbar-logo.png" alt="logo" className="w-32" />

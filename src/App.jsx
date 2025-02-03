@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import './App.css'
+import MobileNavbar from './Components/MobileNavbar'
 
 const App = () => {
 
@@ -27,16 +28,17 @@ const App = () => {
 
 
   return (
-    <>
+    <div className='bg-black'>
       <Navbar />
-          <div className=' overflow-hidden relative -mt-28'>
+      <MobileNavbar/>
+          <div className=' overflow-hidden relative md:-mt-28'>
         {/* component */}
         <div className="bg-black w-full h-full md:h-min-screen">
           <div className=" m-auto">
             <div className="w-full z-0 relative md:h-[40rem]">
               <div className="w-full h-full relative z-0">
-                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
-                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover blur-2xl" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/djxzpihss/video/upload/v1738064261/Websites/Glitched%20Realms/cqxzozyfqr38f6o6hlx3.mp4" />
+                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/djxzpihss/video/upload/v1738510732/Websites/Glitched%20Realms/4krender.mp4" />
+                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover blur-2xl" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/djxzpihss/video/upload/v1738510732/Websites/Glitched%20Realms/4krender.mp4" />
               </div>
             </div>
           </div>
@@ -182,22 +184,22 @@ const App = () => {
               Love bringing people together?
               </p>
               <div className="flex justify-center">
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfmHa64Lv05yPcZbmF7fG8w_NXLWnaxYI_iBtJiw4fCUQugbA/viewform?usp=sf_link' target='_blank' className="inline-flex text-white bg-[#D1363A] border-0 py-2 px-6 focus:outline-none rounded-lg text-md font-bold">JOIN US</a>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfmHa64Lv05yPcZbmF7fG8w_NXLWnaxYI_iBtJiw4fCUQugbA/viewform?usp=sf_link' target='_blank' className="inline-flex text-white bg-[black] border-0 py-2 px-6 focus:outline-none rounded-lg text-md font-bold">JOIN US</a>
               </div>
             </div>
-            <div className=" md:w-1/2">
+            <div className=" md:w-1/2 hidden md:block">
               <img className="object-cover object-center clippy h-[500px]" alt="hero" src="/banner-1.png" />
             </div>
           </div>
         </section>
 
-        <div className=' fixed transition-all hover:mr-0 cursor-pointer -mr-[120px] top-80 right-0 w-48'>
+        <div className=' fixed transition-all hover:mr-0 cursor-pointer -mr-[120px] top-80 right-0 w-48 z-[1111]'>
               <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
                 <img src="/discord.png" alt="annie" className=""/>
               </a>
         </div>
 
-        <div className=' fixed transition-all animate-bounce hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 right-4 w-48'>
+        <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-20 w-48'>
               <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
                 <img src="/G_BUTTON.png" alt="annie" className=""/>
               </a>
@@ -205,7 +207,7 @@ const App = () => {
 
           </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
