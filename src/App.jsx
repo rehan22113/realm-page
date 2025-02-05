@@ -3,6 +3,8 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import './App.css'
 import MobileNavbar from './Components/MobileNavbar'
+import 'aos/dist/aos.css'
+import AOS from 'aos'
 
 const App = () => {
 
@@ -13,6 +15,10 @@ const App = () => {
       videoRef.current.play().catch(err => console.error("Autoplay failed:", err));
     }
   }, []);
+
+  useEffect(()=>{
+      AOS.init()
+  })
 
   const [showTooltip, setShowTooltip] = useState(false);
   const copyText = "client.connect 122.176.96.37:28507";
@@ -49,7 +55,10 @@ const App = () => {
         <div className="container px-5 md:py-20 py-10 mx-auto flex flex-wrap">
           <div className="lg:w-[90%] w-full mx-auto">
           <div className="flex flex-wrap mb-4 -mx-2 md:space-y-0 space-y-6">
-              <div className="px-2 md:w-1/2 w-full h-[320px]">
+              <div className="px-2 md:w-1/2 w-full h-[320px]" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1000">
                 <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
                   <img alt="gallery" className=" md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-1.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
@@ -75,24 +84,21 @@ const App = () => {
       <div className=' absolute bottom-0 right-0 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
-      {showTooltip && (
-              <div className="absolute top-full mt-2 left-1/2 w-full transform -translate-x-1/2 bg-gray-900 text-white text-sm px-3 py-1 rounded-md shadow-lg">
-                <p> Copied. Paste this on Rust Console to Join.</p>
-              </div>
-            )}
-        <button onClick={handleCopy} className="mt-3 text-indigo-500 inline-flex" >
+        <a href='https://shop.glitchedrealms.com/' className="mt-3 text-indigo-500 inline-flex" >
           <img src='/tiles_btn.png' className=' w-40' />
-        </button>
+        </a>
       </div>
         <p className=' text-sm -mt-1'>Please join manually from console/server list if the link is not working</p>
-
       </div>
       </div>
                   </div>
                 </div>
               </div>
 
-              <div className="px-2 md:w-1/2 w-full h-[320px]">
+              <div className="px-2 md:w-1/2 w-full h-[320px]" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2000">
                 <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
                   <img alt="gallery" className="md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-2.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
@@ -114,8 +120,8 @@ const App = () => {
 
       </div>
 
-      <div className=' absolute bottom-5 right-0 flex flex-col justify-end items-end'>
-        <a href='http://mc.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
+      <div className=' absolute bottom-0 right-0 flex flex-col justify-end items-end'>
+        <a href='https://shop.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
           <img src='/tiles_btn.png' className=' w-40 ' />
         </a>
           <p className=' text-sm'>Please join manually from console/server list if the link is not working</p>
@@ -125,7 +131,10 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex h-[310px] flex-wrap w-full hover:md:py-0 md:py-[93px] px-10 relative mb-4 group">
+            <div className="flex h-[310px] flex-wrap w-full hover:md:py-0 md:py-[93px] px-10 relative mb-4 group" data-aos="fade-up"
+     data-aos-easing="ease-in"
+     data-aos-offset="300"
+     data-aos-duration="1000">
               <img alt="gallery" className=" md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-3.png" />
               <div className="text-center px-4 absolute z-10 w-full">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
@@ -185,10 +194,12 @@ const App = () => {
               Love bringing people together?
               </p>
               <div className="flex justify-center">
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfmHa64Lv05yPcZbmF7fG8w_NXLWnaxYI_iBtJiw4fCUQugbA/viewform?usp=sf_link' target='_blank' className="inline-flex text-white bg-[black] border-0 py-2 px-6 focus:outline-none rounded-lg text-md font-bold">JOIN US</a>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSfmHa64Lv05yPcZbmF7fG8w_NXLWnaxYI_iBtJiw4fCUQugbA/viewform?usp=sf_link' target='_blank' className="inline-flex text-white bg-[black] border-0 py-2 px-6 focus:outline-none rounded-lg text-md font-bold hover:scale-105 transition-all hover:bg-[#2E7844]">JOIN US</a>
               </div>
             </div>
-            <div className=" md:w-1/2 hidden md:block">
+            <div className=" md:w-1/2 hidden md:block" data-aos="fade-left"
+     data-aos-easing="ease-in"
+     data-aos-duration="2000">
               <img className="object-cover object-center clippy h-[500px]" alt="hero" src="/banner-1.png" />
             </div>
           </div>
@@ -200,7 +211,7 @@ const App = () => {
               </a>
         </div>
 
-        <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-20 w-48'>
+        <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-10 w-48'>
               <a href='https://glitchbox.net' target='_blank'>
                 <img src="/G_BUTTON.png" alt="annie" className=""/>
               </a>

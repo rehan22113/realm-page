@@ -1,8 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-   <header className="text-white md:block hidden !bg-transparent body-font sticky top-0 z-[888]">
+   <header className={`text-white md:block hidden body-font sticky top-0 z-[888] transition-all duration-300 ${
+        scroll ? "bg-black shadow-md" : "bg-transparent"
+      }`} >
   <div className="container mx-auto flex flex-wrap py-5 px-5 flex-col md:flex-row items-center">
     <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
       <img src="/navbar-logo.png" alt="logo" className="w-32" />
