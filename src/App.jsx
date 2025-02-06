@@ -62,7 +62,7 @@ const App = () => {
                 <div className="flex flex-wrap justify-center w-full h-full items-center py-4 px-4 relative">
                   <img loading="lazy" alt="gallery" className=" object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-1.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center h-full relative text-left group-hover:flex hidden gap-3'>
+                  <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3'>
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -102,7 +102,7 @@ const App = () => {
                 <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
                   <img loading="lazy" alt="gallery" className="object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-2.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center h-full relative text-left group-hover:flex hidden gap-3'>
+                  <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -131,7 +131,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full hover:md:py-0 md:py-[93px] relative mb-4 group" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full hover:md:py-0 md:py-[93px] relative mb-4 group justify-center items-center" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="300"
      data-aos-duration="1000">
@@ -157,7 +157,7 @@ const App = () => {
 
                       </div>
 
-                      <div className=' absolute md:bottom-0 -bottom-2 md:right-10 -right-2 flex flex-col justify-end items-end'>
+                      <div className=' absolute -md:bottom-10 -bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
 
                       <div className=' relative'>
 
