@@ -55,14 +55,14 @@ const App = () => {
         <div className="container px-5 md:py-20 py-10 mx-auto flex flex-wrap">
           <div className="lg:w-[90%] w-full mx-auto">
           <div className="flex flex-wrap mb-4 -mx-2 md:space-y-0 space-y-6">
-              <div className="px-2 md:w-1/2 w-full h-[320px]" data-aos="fade-right"
+              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[180px] group" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
-                <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
-                  <img alt="gallery" className=" md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-1.png" />
+                <div className="flex flex-wrap justify-center w-full h-full items-center py-4 px-4 relative">
+                  <img loading="lazy" alt="gallery" className=" object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-1.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center h-[300px] relative text-left group-hover:flex hidden gap-3'>
+                  <div className='justify-start items-center h-full relative text-left group-hover:flex hidden gap-3'>
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -81,28 +81,28 @@ const App = () => {
 
                 </div>
 
-      <div className=' absolute bottom-0 right-0 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-0 md:right-0 -right-3 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
         <a href='https://shop.glitchedrealms.com/' className="mt-3 text-indigo-500 inline-flex" >
-          <img src='/tiles_btn.png' className=' w-40' />
+          <img loading="lazy" src='/tiles_btn.png' className=' md:w-40 w-36' />
         </a>
       </div>
-        <p className=' text-sm -mt-1'>Please join manually from console/server list if the link is not working</p>
+        <p className=' text-sm -mt-1 hidden md:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>
                 </div>
               </div>
 
-              <div className="px-2 md:w-1/2 w-full h-[320px]" data-aos="fade-left"
+              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[180px]" data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="2000">
                 <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
-                  <img alt="gallery" className="md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-2.png" />
+                  <img loading="lazy" alt="gallery" className="object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-2.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center h-[300px] relative text-left group-hover:flex hidden gap-3'>
+                  <div className='justify-start items-center h-full relative text-left group-hover:flex hidden gap-3'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -120,26 +120,27 @@ const App = () => {
 
       </div>
 
-      <div className=' absolute bottom-0 right-0 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-0 md:right-0 -right-3 flex flex-col justify-end items-end'>
         <a href='https://shop.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
-          <img src='/tiles_btn.png' className=' w-40 ' />
+          <img loading="lazy" src='/tiles_btn.png' className=' md:w-40 w-36' />
         </a>
-          <p className=' text-sm'>Please join manually from console/server list if the link is not working</p>
+          <p className=' text-sm hidden md:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex h-[310px] flex-wrap w-full hover:md:py-0 md:py-[93px] px-10 relative mb-4 group" data-aos="fade-up"
+            <div className="flex md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full hover:md:py-0 md:py-[93px] relative mb-4 group" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="300"
      data-aos-duration="1000">
-              <img alt="gallery" className=" md:object-contain w-full h-full group-hover:border object-center block absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-3.png" />
-              <div className="text-center px-4 absolute z-10 w-full">
+              <img loading="lazy" alt="gallery" className=" md:block hidden object-contain w-full h-full group-hover:border object-center absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tile-3.png" />
+              <img loading="lazy" alt="gallery" className=" md:hidden block object-contain w-full h-full group-hover:border object-center absolute inset-0 rounded-lg group-hover:opacity-10 transition-all" src="/tiles-mobile-3.png" />
+              <div className="md:text-center px-4 absolute z-10 w-full">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
                     <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p> */}
-                    <div className='justify-start items-center h-[300px] relative text-left group-hover:flex hidden gap-3'>
+                    <div className='md:justify-start md:items-center h-full relative text-left group-hover:flex hidden gap-3'>
 
                       <div>
                         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -156,7 +157,7 @@ const App = () => {
 
                       </div>
 
-                      <div className=' absolute bottom-5 right-10 flex flex-col justify-end items-end'>
+                      <div className=' absolute md:bottom-0 -bottom-2 md:right-10 -right-2 flex flex-col justify-end items-end'>
 
                       <div className=' relative'>
 
@@ -166,12 +167,12 @@ const App = () => {
               </div>
             )}
         <button onClick={handleCopy} className="mt-3 text-indigo-500 inline-flex" >
-           <img src='/plat_now_button.png' className=' w-40' />
+           <img loading="lazy" src='/plat_now_button.png' className=' w-40' />
         </button>
       </div>
                       
                         {/* <button onClick={handleCopyRust} target='_blank' className="mt-3 text-indigo-500 inline-flex" >
-                          <img src='/plat_now_button.png' className=' w-40' />
+                          <img loading="lazy" src='/plat_now_button.png' className=' w-40' />
                         </button>
                         <p className=' text-sm'>Please join manually from console/server list if the link is not working</p> */}
 
@@ -185,8 +186,8 @@ const App = () => {
         </section>
 
         <section id="work" className="text-gray-600 body-font bg-gray-100">
-          <div className="container mx-auto flex md:py-0 py-5 md:pl-5 md:flex-row flex-col items-center">
-            <div className=" md:w-1/2 flex flex-col mb-16 md:mb-0 items-center text-center">
+          <div className="container mx-auto flex md:py-0 py-5 md:pl-5 md:flex-row flex-col items-center md:justify-normal justify-center">
+            <div className=" md:w-1/2 flex flex-col md:py-0 py-10 items-center text-center">
               <h1 className="title-font text-center sm:text-4xl text-3xl font-bold mb-4 text-gray-900">
               Join Our Team of Game Enthusiasts
               </h1>
@@ -200,20 +201,20 @@ const App = () => {
             <div className=" md:w-1/2 hidden md:block" data-aos="fade-left"
      data-aos-easing="ease-in"
      data-aos-duration="2000">
-              <img className="object-cover object-center clippy h-[500px]" alt="hero" src="/banner-1.png" />
+              <img loading="lazy" className="object-cover object-center clippy h-[500px]" alt="hero" src="/banner-1.png" />
             </div>
           </div>
         </section>
 
         <div className=' fixed transition-all hover:mr-0 cursor-pointer -mr-[120px] top-80 right-0 w-48 z-[1111]'>
               <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
-                <img src="/discord.png" alt="annie" className=""/>
+                <img loading="lazy" src="/discord.png" alt="annie" className=""/>
               </a>
         </div>
 
         <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-10 w-48'>
               <a href='https://glitchbox.net' target='_blank'>
-                <img src="/G_BUTTON.png" alt="annie" className=""/>
+                <img loading="lazy" src="/G_BUTTON.png" alt="annie" className=""/>
               </a>
         </div>
 
