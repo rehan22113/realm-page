@@ -57,11 +57,11 @@ const App = () => {
         <div className="container px-5 md:py-20 py-10 mx-auto flex flex-wrap">
           <div className="lg:w-[90%] w-full mx-auto">
           <div className="flex flex-wrap mb-4 -mx-2 md:space-y-0 space-y-2">
-              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[180px] group" data-aos="fade-right"
+              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[140px] group" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
-                <div className="flex flex-wrap justify-center w-full h-full items-center py-4 relative">
+                <div className="flex flex-wrap justify-center w-full h-full items-center relative group-hover:border group-hover:rounded-md">
                   <LazyLoadImage
                     
                     effect="blur" 
@@ -69,7 +69,7 @@ const App = () => {
                     height={'100%'} 
                     width={'100%'} 
                     className="object-contain object-center block absolute inset-0 rounded-lg transition-all"
-                    wrapperClassName="w-full h-full group-hover:border group-hover:opacity-10" 
+                    wrapperClassName="w-full h-full group-hover:opacity-10" 
                     src="/tile-1.webp" 
                   />
                   <div className="text-center px-4 absolute z-10 w-full">
@@ -77,7 +77,7 @@ const App = () => {
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
-                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold ">
+                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
                 <li>One Block</li>
                 <li>Sky Block
 
@@ -108,21 +108,21 @@ const App = () => {
                 </div>
               </div>
 
-              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[180px]" data-aos="fade-left"
+              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[140px]" data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="2000">
-                <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 relative">
+                <div className="flex flex-wrap group justify-center w-full h-full items-center relative hover:border rounded-md">
                   <LazyLoadImage
                      effect="blur"  height="100%"
-      width="100%" alt="gallery" className="object-contain object-center block absolute inset-0 rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:border group-hover:opacity-10" src="/tile-2.webp" />
+      width="100%" alt="gallery" className="object-contain object-center block rounded-lg transition-all"
+      wrapperClassName="w-full h-full group-hover:opacity-10" src="/tile-2.webp" />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
-        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold ">
+        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
       <li>One Block</li>
 <li>Sky Block</li>
 <li>Bed Wars</li>
@@ -149,23 +149,23 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:h-[310px] hover:md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full relative mb-4 group transition-all justify-center items-center py-2" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-[160px] flex-wrap w-full relative mb-4 group transition-all justify-center items-center md:py-2" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="100"
      data-aos-duration="1000">
-     <div className='relative h-full w-full md:block hidden'>
+     <div className='relative h-full w-full md:block hidden group-hover:border rounded-md'>
 
               <LazyLoadImage
                  effect="blur" height="100%"
       width="100%" alt="gallery" className="md:block !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
-      wrapperClassName="hidden w-full h-full group-hover:border hover:transition-all group-hover:opacity-10 delay-200" src="/tile-3.webp" />
+      wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-10 delay-200" src="/tile-3.webp" />
      </div>
-     <div className='relative h-full w-full md:hidden block'>
+     <div className='relative h-full w-full md:hidden block group-hover:border'>
 
               <LazyLoadImage
                  effect="blur"  height="100%"
       width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
-      wrapperClassName="block w-full h-full group-hover:border group-hover:opacity-10 delay-200" src="/tiles-mobile-3.webp" />
+      wrapperClassName="block w-full h-full group-hover:opacity-10 delay-200" src="/tiles-mobile-3.webp" />
       </div>
               <div className="md:text-center px-4 absolute z-10 w-full">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
@@ -174,7 +174,7 @@ const App = () => {
 
                       <div>
                         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
-                        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold ">
+                        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
         <li>X5 Gather Rates on Resources, Components and Food</li>
         <li>X5 Stack Size</li>
         <li>X5 Crafting Speed</li>
