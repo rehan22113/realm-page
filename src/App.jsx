@@ -61,15 +61,16 @@ const App = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
-                <div className="flex flex-wrap justify-center w-full h-full items-center py-4 px-4 relative">
+                <div className="flex flex-wrap justify-center w-full h-full items-center py-4 relative">
                   <LazyLoadImage
+                    
                     effect="blur" 
                     alt="gallery" 
                     height={'100%'} 
                     width={'100%'} 
                     className="object-contain object-center block absolute inset-0 rounded-lg transition-all"
                     wrapperClassName="w-full h-full group-hover:border group-hover:opacity-10" 
-                    src="/tile-1.png" 
+                    src="/tile-1.webp" 
                   />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
@@ -91,12 +92,13 @@ const App = () => {
 
                 </div>
 
-      <div className=' absolute bottom-0 md:right-0 -right-0 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
         <a href='https://shop.glitchedrealms.com/' className="mt-3 text-indigo-500 inline-flex" >
-          <LazyLoadImage effect="blur"  height="auto"
-      width="100%" src='/tiles_btn.png' className=' md:w-40 w-36' />
+          <LazyLoadImage
+             effect="blur"  height="auto"
+      width="100%" src='/tiles_btn.png' className=' md:w-40 w-32' />
         </a>
       </div>
         <p className=' text-sm -mt-1 hidden md:block'>Please join manually from console/server list if the link is not working</p>
@@ -110,10 +112,11 @@ const App = () => {
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="2000">
-                <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 px-4 relative">
-                  <LazyLoadImage effect="blur"  height="100%"
+                <div className="flex flex-wrap group justify-center w-full h-full items-center py-4 relative">
+                  <LazyLoadImage
+                     effect="blur"  height="100%"
       width="100%" alt="gallery" className="object-contain object-center block absolute inset-0 rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:border group-hover:opacity-10" src="/tile-2.png" />
+      wrapperClassName="w-full h-full group-hover:border group-hover:opacity-10" src="/tile-2.webp" />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
@@ -133,10 +136,11 @@ const App = () => {
 
       </div>
 
-      <div className=' absolute bottom-0 md:right-0 -right-0 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
         <a href='https://shop.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
-          <LazyLoadImage effect="blur"  height="auto"
-      width="100%" src='/tiles_btn.png' className=' md:w-40 w-36' />
+          <LazyLoadImage
+             effect="blur"  height="auto"
+      width="100%" src='/tiles_btn.png' className=' md:w-40 w-32' />
         </a>
           <p className=' text-sm hidden md:block'>Please join manually from console/server list if the link is not working</p>
       </div>
@@ -145,21 +149,23 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex md:h-[310px] hover:md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full relative mb-4 group transition-all justify-center items-center px-3 py-2" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-[180px] hover:h-[200px] flex-wrap w-full relative mb-4 group transition-all justify-center items-center py-2" data-aos="fade-up"
      data-aos-easing="ease-in"
-     data-aos-offset="300"
+     data-aos-offset="100"
      data-aos-duration="1000">
      <div className='relative h-full w-full md:block hidden'>
 
-              <LazyLoadImage effect="blur" height="100%"
+              <LazyLoadImage
+                 effect="blur" height="100%"
       width="100%" alt="gallery" className="md:block !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
-      wrapperClassName="hidden w-full h-full group-hover:border group-hover:opacity-10 delay-200" src="/tile-3.png" />
+      wrapperClassName="hidden w-full h-full group-hover:border hover:transition-all group-hover:opacity-10 delay-200" src="/tile-3.webp" />
      </div>
      <div className='relative h-full w-full md:hidden block'>
 
-              <LazyLoadImage effect="blur"  height="100%"
+              <LazyLoadImage
+                 effect="blur"  height="100%"
       width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
-      wrapperClassName="block w-full h-full group-hover:border group-hover:opacity-10 delay-200" src="/tiles-mobile-3.png" />
+      wrapperClassName="block w-full h-full group-hover:border group-hover:opacity-10 delay-200" src="/tiles-mobile-3.webp" />
       </div>
               <div className="md:text-center px-4 absolute z-10 w-full">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
@@ -181,7 +187,7 @@ const App = () => {
 
                       </div>
 
-                      <div className=' absolute -md:bottom-10 -bottom-2 md:right-0 -right-0 flex flex-col justify-end items-end'>
+                      <div className=' absolute -md:bottom-10 -bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
 
                       <div className=' relative'>
 
@@ -191,13 +197,15 @@ const App = () => {
               </div>
             )}
         <button onClick={handleCopy} className="mt-3 text-indigo-500 inline-flex" >
-           <LazyLoadImage effect="blur"  height="auto"
-      width="100%" src='/plat_now_button.png' className=' w-40' />
+           <LazyLoadImage
+             effect="blur"  height="auto"
+      width="100%" src='/plat_now_button.png' className=' md:w-40 w-32' />
         </button>
       </div>
                       
                         {/* <button onClick={handleCopyRust} target='_blank' className="mt-3 text-indigo-500 inline-flex" >
-                          <LazyLoadImage effect="blur"  height="auto"
+                          <LazyLoadImage
+                             effect="blur"  height="auto"
       width="100%" src='/plat_now_button.png' className=' w-40' />
                         </button>
                         <p className=' text-sm'>Please join manually from console/server list if the link is not working</p> */}
@@ -227,22 +235,25 @@ const App = () => {
             <div className=" md:w-1/2 hidden md:block" data-aos="fade-left"
      data-aos-easing="ease-in"
      data-aos-duration="2000">
-              <LazyLoadImage effect="blur"  height="auto"
-      width="100%" className="object-cover object-center clippy h-[500px]" alt="hero" src="/banner-1.png" />
+              <LazyLoadImage
+                 effect="blur"  height="auto"
+      width="100%" className="object-cover object-center clippy h-[500px] -mb-2" alt="hero" src="/banner-1.webp" />
             </div>
           </div>
         </section>
 
         <div className=' fixed transition-all hover:mr-0 cursor-pointer -mr-[120px] top-80 right-0 w-48 z-[1111]'>
               <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
-                <LazyLoadImage effect="blur"  height="auto"
+                <LazyLoadImage
+                   effect="blur"  height="auto"
       width="100%" src="/discord.png" alt="annie" className=""/>
               </a>
         </div>
 
         <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-10 w-48'>
               <a href='https://glitchbox.net' target='_blank'>
-                <LazyLoadImage effect="blur"  height="auto"
+                <LazyLoadImage
+                   effect="blur"  height="auto"
       width="100%" src="/G_BUTTON.png" alt="annie" className=""/>
               </a>
         </div>
