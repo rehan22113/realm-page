@@ -151,15 +151,15 @@ const App = () => {
        
 
             </div>
-            <div className="flex md:h-[310px] hover:md:h-[310px] h-auto hover:border flex-wrap w-full mb-4 group rounded-lg transition-all justify-center items-center md:py-2 relative" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-auto flex-wrap w-full mb-4 group rounded-lg transition-all justify-center items-center md:py-2 relative" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="100"
      data-aos-duration="1000">
-     <div className='relative h-full w-full md:block hidden hover:rounded-lg'>
+     <div className='relative h-full w-full md:block hidden group-hover:border rounded-lg'>
 
               <LazyLoadImage
                  effect="blur" height="100%"
-      width="100%" alt="gallery" className="md:block !w-full !h-full object-center !transition-all " 
+      width="100%" alt="gallery" className="md:block !w-full rounded-lg !h-full object-center !transition-all " 
       wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-10 delay-200" src="/tile-3.webp" />
      </div>
      <div className='relative h-full w-full md:hidden block'>
