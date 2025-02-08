@@ -111,7 +111,7 @@ const App = () => {
               <div className="px-2 md:w-1/2 w-full lg:h-[320px] h-[170px]" data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
-     data-aos-duration="2000">
+     data-aos-duration="1200">
                 <div className="flex flex-wrap group justify-center w-full h-full items-center relative hover:border rounded-md">
                   <LazyLoadImage
                      effect="blur"  height="100%"
