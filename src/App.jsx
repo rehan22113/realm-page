@@ -56,9 +56,9 @@ const App = () => {
         <section id='tiles' className="text-gray-100 bg-[#1F1F1F] body-font">
         <div className="container px-5 md:py-20 py-10 mx-auto flex flex-wrap">
           <div className="lg:w-[90%] w-full mx-auto">
-          <div className="flex flex-wrap mb-8  -mx-2 md:space-y-0 space-y-5">
-              <div className="px-2 md:w-1/2 w-full lg:h-[320px] h-[170px] group" data-aos="fade-right"
-     data-aos-offset="300"
+          <div className="flex md:flex-row flex-col lg:gap-0 gap-2 mb-2 -mx-2">
+
+              <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-right"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
                 <div className="flex flex-wrap justify-center w-full h-full items-center relative group-hover:border group-hover:rounded-md">
@@ -68,12 +68,12 @@ const App = () => {
                     alt="gallery" 
                     height={'100%'} 
                     width={'100%'} 
-                    className="object-contain object-center block absolute inset-0 rounded-lg transition-all"
+                    className="object-contain object-center block rounded-lg transition-all"
                     wrapperClassName="w-full h-full group-hover:opacity-10" 
                     src="/tile-1.webp" 
                   />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center lg:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+                  <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -101,24 +101,24 @@ const App = () => {
       width="100%" src='/tiles_btn.png' className=' lg:w-40 w-32' />
         </a>
       </div>
-        <p className=' text-sm -mt-1 hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+        <p className=' 2xl:text-sm md:text-[10px] -mt-1 hidden lg:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>
                 </div>
               </div>
+            
 
-              <div className="px-2 md:w-1/2 w-full lg:h-[320px] h-[170px]" data-aos="fade-left"
-     data-aos-offset="300"
+              <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1200">
-                <div className="flex flex-wrap group justify-center w-full h-full items-center relative hover:border rounded-md">
+                <div className="flex flex-wrap justify-center w-full h-full items-center relative hover:border rounded-md">
                   <LazyLoadImage
                      effect="blur"  height="100%"
-      width="100%" alt="gallery" className="object-contain object-center block rounded-lg transition-all"
+      width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
       wrapperClassName="w-full h-full group-hover:opacity-10" src="/tile-2.webp" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center lg:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+                  <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
@@ -142,29 +142,31 @@ const App = () => {
              effect="blur"  height="auto"
       width="100%" src='/tiles_btn.png' className=' lg:w-40 w-32' />
         </a>
-          <p className=' text-sm hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+          <p className='2xl:text-sm md:text-[10px] hidden lg:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>
                 </div>
               </div>
+       
+
             </div>
-            <div className="flex md:h-[310px] hover:md:h-[310px] h-[160px] flex-wrap w-full relative mb-4 group transition-all justify-center items-center md:py-2" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-auto hover:border flex-wrap w-full mb-4 group rounded-lg transition-all justify-center items-center md:py-2 relative" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="100"
      data-aos-duration="1000">
-     <div className='relative h-full w-full md:block hidden group-hover:border rounded-md'>
+     <div className='relative h-full w-full md:block hidden hover:rounded-lg'>
 
               <LazyLoadImage
                  effect="blur" height="100%"
-      width="100%" alt="gallery" className="md:block !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
+      width="100%" alt="gallery" className="md:block !w-full !h-full object-center !transition-all " 
       wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-10 delay-200" src="/tile-3.webp" />
      </div>
-     <div className='relative h-full w-full md:hidden block group-hover:border'>
+     <div className='relative h-full w-full md:hidden block'>
 
               <LazyLoadImage
                  effect="blur"  height="100%"
-      width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center absolute inset-0 rounded-lg !transition-all " 
+      width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center rounded-lg !transition-all " 
       wrapperClassName="block w-full h-full group-hover:opacity-10 delay-200" src="/tiles-mobile-3.webp" />
       </div>
               <div className="md:text-center px-4 absolute z-10 w-full">
@@ -173,7 +175,7 @@ const App = () => {
                     <div className='md:justify-start md:items-center h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                       <div>
-                        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+                        <h1 className=' md:text-xl text-md font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
                         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
         <li>X5 Gather Rates on Resources, Components and Food</li>
         <li>X5 Stack Size</li>
@@ -250,7 +252,7 @@ const App = () => {
               </a>
         </div>
 
-        <div className=' fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-10 w-48'>
+        <div className=' md:block hidden fixed transition-all animated hover:animate-none hover:mt-0 cursor-pointer z-[1111] -mt-[45px] top-0 md:right-4 right-10 w-48'>
               <a href='https://glitchbox.net' target='_blank'>
                 <LazyLoadImage
                    effect="blur"  height="auto"
