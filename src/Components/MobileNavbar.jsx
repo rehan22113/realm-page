@@ -14,7 +14,7 @@ const MobileNavbar = () => {
     <div className="flex items-center justify-between px-4 py-3 sticky top-0 z-40 ">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto px-4">
       <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
-      <img src="/navbar-logo.png" alt="logo" className="w-32" />
+      <img src="/navbar-logo.webp" alt="logo" className="w-32" />
     </a>
         <div className="block lg:hidden text-[white]">
           <button onClick={toggleDrawer} className="flex items-center px-3 py-2 border rounded border-skin-primary hover:text-skin-primary text-skin-primary hover:border-white">
@@ -38,7 +38,7 @@ const MobileNavbar = () => {
     </button>
     <div className="py-2 gap-10 overflow-y-auto flex-col flex justify-center items-center h-full">
     <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
-      <img src="/navbar-logo.png" alt="logo" className="w-32" />
+      <img src="/navbar-logo.webp" alt="logo" className="w-32" />
     </a>
       <ul onClick={toggleDrawer} className="space-y-6 font-bold text-center text-xl">
       <li>

@@ -56,8 +56,8 @@ const App = () => {
         <section id='tiles' className="text-gray-100 bg-[#1F1F1F] body-font">
         <div className="container px-5 md:py-20 py-10 mx-auto flex flex-wrap">
           <div className="lg:w-[90%] w-full mx-auto">
-          <div className="flex flex-wrap mb-4 -mx-2 md:space-y-0 space-y-2">
-              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[140px] group" data-aos="fade-right"
+          <div className="flex flex-wrap mb-8  -mx-2 md:space-y-0 space-y-5">
+              <div className="px-2 md:w-1/2 w-full lg:h-[320px] h-[170px] group" data-aos="fade-right"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
@@ -73,11 +73,11 @@ const App = () => {
                     src="/tile-1.webp" 
                   />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+                  <div className='justify-start items-center lg:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
-                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
+                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
                 <li>One Block</li>
                 <li>Sky Block
 
@@ -95,20 +95,20 @@ const App = () => {
       <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
-        <a href='https://shop.glitchedrealms.com/' className="mt-3 text-indigo-500 inline-flex" >
+        <a href='https://shop.glitchedrealms.com/' target="_blank" className="mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
-      width="100%" src='/tiles_btn.png' className=' md:w-40 w-32' />
+      width="100%" src='/tiles_btn.png' className=' lg:w-40 w-32' />
         </a>
       </div>
-        <p className=' text-sm -mt-1 hidden md:block'>Please join manually from console/server list if the link is not working</p>
+        <p className=' text-sm -mt-1 hidden lg:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>
                 </div>
               </div>
 
-              <div className="px-2 md:w-1/2 w-full md:h-[320px] h-[140px]" data-aos="fade-left"
+              <div className="px-2 md:w-1/2 w-full lg:h-[320px] h-[170px]" data-aos="fade-left"
      data-aos-offset="300"
      data-aos-easing="ease-in-sine"
      data-aos-duration="2000">
@@ -118,11 +118,11 @@ const App = () => {
       width="100%" alt="gallery" className="object-contain object-center block rounded-lg transition-all"
       wrapperClassName="w-full h-full group-hover:opacity-10" src="/tile-2.webp" />
                   <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center md:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+                  <div className='justify-start items-center lg:h-[300px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
-        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
+        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
       <li>One Block</li>
 <li>Sky Block</li>
 <li>Bed Wars</li>
@@ -140,9 +140,9 @@ const App = () => {
         <a href='https://shop.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
-      width="100%" src='/tiles_btn.png' className=' md:w-40 w-32' />
+      width="100%" src='/tiles_btn.png' className=' lg:w-40 w-32' />
         </a>
-          <p className=' text-sm hidden md:block'>Please join manually from console/server list if the link is not working</p>
+          <p className=' text-sm hidden lg:block'>Please join manually from console/server list if the link is not working</p>
       </div>
       </div>
                   </div>

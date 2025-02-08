@@ -23,7 +23,7 @@ const Navbar = () => {
       }`} >
   <div className="container mx-auto flex flex-wrap py-5 px-5 flex-col md:flex-row items-center">
     <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
-      <img src="/navbar-logo.png" alt="logo" className="w-32" />
+      <img src="/navbar-logo.webp" alt="logo" className="w-32" />
     </a>
     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 flex flex-wrap items-center uppercase text-sm font-bold justify-center">
       <a href='/#' className="mr-5 hover:text-gray-300 hover:scale-110">Home</a>
