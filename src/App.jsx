@@ -135,7 +135,7 @@ const App = () => {
       </ul>
 
       </div>
-
+      {/* update */}
       <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
         <a href='https://shop.glitchedrealms.com/' target='_blank' className="mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
