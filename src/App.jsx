@@ -45,8 +45,8 @@ const App = () => {
           <div className=" m-auto">
             <div className="w-full z-0 relative md:h-[40rem]">
               <div className="w-full h-full relative z-0">
-                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/djxzpihss/video/upload/v1738510732/Websites/Glitched%20Realms/4krender.mp4" />
-                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/djxzpihss/video/upload/v1738510732/Websites/Glitched%20Realms/4krender.mp4" />
+                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/dadeewqbl/video/upload/v1740402702/aqzmgj7pxwfcfevubhep.mp4" />
+                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/dadeewqbl/video/upload/v1740402702/aqzmgj7pxwfcfevubhep.mp4" />
               </div>
             </div>
           </div>
