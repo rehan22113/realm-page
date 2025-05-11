@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url('../assets/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.leaderboard-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1F1F1F;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 8px;
+  overflow: hidden;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.leaderboard-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-header {
+  background-color: #1F1F1F;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.dropdown-header img {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-family: 'Gameria', sans-serif;
+  position: relative;
+  overflow: visible;
+}
+
+.dropdown-item:hover {
+  background-color: #2d2d2d;
+}
+
+.dropdown-item span.gold {
+  color: #ffa800;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-item span.gold::before {
+  content: '';
+  background-image: url('https://res.cloudinary.com/dsbups4jj/image/upload/v1745681240/GrassNew_d4sssv.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  overflow: visible;
+  left: -70px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover span.gold::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dropdown-item span.gold::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #2c7344;
+  transition: width 0.3s;
+}
+
+.dropdown-item:hover span.gold::after {
+  width: 100%;
+}
+
+.dropdown-item span.red {
+  color: #d90000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-item span.red::before {
+  content: '';
+  background-image: url('https://res.cloudinary.com/dsbups4jj/image/upload/v1745681240/GrassNew_d4sssv.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -40px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover span.red::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dropdown-item span.red::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #2c7344;
+  transition: width 0.3s;
+}
+
+.dropdown-item:hover span.red::after {
+  width: 100%;
+}

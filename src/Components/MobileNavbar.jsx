@@ -1,11 +1,12 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Drawer from 'react-modern-drawer'
-
-//import styles 👇
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import VoteModal from './VoteModal';
 import 'react-modern-drawer/dist/index.css'
 
 const MobileNavbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isVoteModalOpen, setIsVoteModalOpen] = useState(false)
     const toggleDrawer = () => {
         setIsOpen((prevState) => !prevState)
     }
@@ -48,24 +49,43 @@ const MobileNavbar = () => {
 
       <li>
 
-      <a href='/#tiles' className="mr-5 hover:text-gray-300 hover:scale-110">Servers</a>
+      <a href='/#tiles' className="mr-5 hover:text-gray-300 hover:scale-110">Games</a>
       </li>
       <li>
-      <a href='/#work' className="mr-5 hover:text-gray-300 hover:scale-110">Work with Us</a>     
+
+
+      <a href='/#hosting' className="mr-5 hover:text-gray-300 hover:scale-110">Hosting</a>
+      </li>
+        <li>
+      <a href='/#work' className="mr-5 hover:text-gray-300 hover:scale-110">Team</a>     
         </li>
+      <li className="relative group">
+        <div className="mr-5 hover:text-gray-300">
+          <span>Leaderboards</span>
+          <div className=" w-full p-4">
+            <div className=" flex justify-center items-center">
+              <img src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745681011/realms_apufac.png" alt="Realms" className="w-32 h-auto object-contain " />
+            </div>
+            <a href="/#tiles" className="dropdown-item block py-2 text-gold text-yellow-400">Hall of Fame</a>
+            <a href="/#tiles" className="dropdown-item block py-2 text-red-500 hover:text-red-400">Hall of Shame (Bans)</a>
+          </div>
+        </div>
+      </li>
+    
       </ul>
      
     </div>
-      <div className='relative bottom-0'>
-
-      <a href="/contact" className="inline-flex text-md font-extrabold text-black items-center hover:bg-white border-0 py-2 px-3 focus:outline-none bg-skin-primaryBtn rounded mt-4 md:mt-0">Contact Us
-                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
-                            strokeWidth={2}
-                            className="w-4 h-4 ml-1"
-                            viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+      <div className='relative bottom-0 flex justify-center w-full'>
+        <button onClick={() => { setIsVoteModalOpen(true); setIsOpen(false); }} className="mt-3 text-indigo-500 inline-flex">
+          <LazyLoadImage
+            effect="blur"
+            height="auto"
+            width="100%"
+            src='https://res.cloudinary.com/dsbups4jj/image/upload/v1745680774/cta_vote_xwfykt.png'
+            className='w-32'
+          />
+        </button>
+        <VoteModal isOpen={isVoteModalOpen} onClose={() => setIsVoteModalOpen(false)} />
       </div>
   </div>
   </Drawer>

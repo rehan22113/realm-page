@@ -1,7 +1,55 @@
+@font-face {
+  font-family: 'Epsum';
+  src: url('./assets/Gilroy-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gameria';
+  src: url('./assets/GAMERIA.ttf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+.gameria-font {
+  font-family: 'Gameria', sans-serif;
+}
+
+.glory-font {
+  font-family: 'Epsum', sans-serif;
+}
+
+.tiles-font {
+  font-family: 'Epsum', sans-serif;
+}
+.tiles-font ul *{
+  font-size: 14px !important;
+  line-height: 1.5;
+}
+
 *{
   scroll-behavior: smooth;
 }
 
+/* Metal Button Styling */
+.metal-button {
+  background: linear-gradient(to bottom, #717b84, #28313a);
+  border: 1px solid #60676f;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  color: #000;
+  font-family: 'Gilroy', 'Poppins', sans-serif; /* First try Gilroy, else Poppins */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.metal-button:hover {
+  background: linear-gradient(to bottom, #717b84, #28313a);
+  transform: scale(1.02);
+}
 
 .clippy{
   clip-path: polygon(11% 0, 100% 0%, 91% 100%, 0% 100%);
@@ -20,4 +68,9 @@
 }
 .animated {
   animation: bounce 2.5s infinite;
+}
+
+
+.opacity img{
+ opacity: 0.3 !important;
 }
