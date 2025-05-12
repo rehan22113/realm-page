@@ -48,8 +48,8 @@ const App = () => {
           <div className=" m-auto">
             <div className="w-full z-0 relative md:h-[40rem]">
               <div className="w-full h-full relative z-0">
-                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/dadeewqbl/video/upload/v1740402702/aqzmgj7pxwfcfevubhep.mp4" />
-                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/dadeewqbl/video/upload/v1740402702/aqzmgj7pxwfcfevubhep.mp4" />
+                <video ref={videoRef} className="relative z-[1] inline w-full h-full object-center object-cover" preload="auto" loop playsInline muted autoPlay aria-hidden="false" src="https://res.cloudinary.com/dhsirbsgx/video/upload/Comp_1_uacx9m.webm" />
+                <video className="absolute top-0 left-0 w-full h-full transform-gpu translate-x-0 translate-y-0 z-0 inline object-center object-cover" preload="none" aria-hidden="false" muted loop playsInline autoPlay src="https://res.cloudinary.com/dhsirbsgx/video/upload/Comp_1_uacx9m.webm" />
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ data-aos-duration="1000">
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
   <div>
-    <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+    <h1 className=' hidden md:inline text-xl font-extrabold border-b-2 border-blue-400'>SERVER INFO</h1>
     <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
   <li>Factories</li>
   <li>PvP Arena</li>
@@ -92,7 +92,7 @@ data-aos-duration="1000">
 
   </div>
 
-<div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
+<div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
 <div className=' relative'>
 
 <a href='https://shop.glitchbox.net/' target="_blank" className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
@@ -101,7 +101,7 @@ effect="blur"  height="auto"
 width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
 </a>
 </div>
-<p className=' 2xl:text-sm md:text-[10px] -mt-1 hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+
 </div>
 </div>
     </div>
@@ -121,7 +121,7 @@ wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudin
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
 <div>
-<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
 <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
 <li>Premium LifestealCore</li>
 <li>Custom Enchants</li>
@@ -134,13 +134,12 @@ wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudin
 <span>...& more</span>
 
 </div>
-<div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
+<div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
 <a href='https://shop.glitchbox.net/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
 <LazyLoadImage
 effect="blur"  height="auto"
 width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
 </a>
-<p className='2xl:text-sm md:text-[10px] hidden lg:block'>Please join manually from console/server list if the link is not working</p>
 </div>
 </div>
     </div>
@@ -163,7 +162,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
-        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
       <li>Catch, train, and battle</li>
       <li>Official-style combat with moves and abilities</li>
@@ -175,13 +174,13 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
       <span>& more</span>
 
       </div>
-      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
-        <a href='https://shop.glitchedrealms.com/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+      <div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+        <a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
       width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
         </a>
-          <p className='2xl:text-sm md:text-[10px] hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+        
       </div>
       </div>
                   </div>
@@ -201,7 +200,7 @@ wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudin
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
 <div>
-<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
 <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
 <li>Profile System</li>
 <li>Unique Jobs</li>
@@ -213,13 +212,12 @@ wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudin
 <span>...& more</span>
 
 </div>
-<div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
-<a href='https://lifesteal.glitchedrealms.com/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+<div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+<a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
 <LazyLoadImage
 effect="blur"  height="auto"
 width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
 </a>
-<p className='2xl:text-sm md:text-[10px] hidden lg:block'>Please join manually from console/server list if the link is not working</p>
 </div>
 </div>
     </div>
@@ -242,7 +240,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
-        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
       <li>Upgradeable Generators</li>
       <li>Auto Pickup & AutoSell</li>
@@ -255,13 +253,13 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
       <span>....& more</span>
 
       </div>
-      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
-        <a href='https://dynasties.glitchedrealms.com/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+      <div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
+        <a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
       width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
         </a>
-          <p className='2xl:text-sm md:text-[10px] hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+        
       </div>
       </div>
                   </div>
@@ -285,7 +283,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                 <div>
-                  <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+                  <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
                   <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
                 <li>Pickaxe</li>
                 <li>Enchanter</li>
@@ -300,16 +298,16 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
 
                 </div>
 
-      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
-        <a href='https://dynasties.glitchedrealms.com/' target="_blank" className=" hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+        <a href='https://shop.glitchbox.net/' target="_blank" className=" hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
       width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
         </a>
       </div>
-        <p className=' 2xl:text-sm md:text-[10px] -mt-1 hidden lg:block'>Please join manually from console/server list if the link is not working</p>
+        
       </div>
       </div>
                   </div>
@@ -346,7 +344,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                     <div className='md:justify-start md:items-center h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                       <div>
-                        <h1 className=' md:text-xl text-md font-extrabold border-b-2 border-blue-400 inline'>SERVER INFO</h1>
+                        <h1 className=' md:text-xl text-md font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
                         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
         <li>Choose your Tribe</li>
         <li>Build your Empire</li>
@@ -368,10 +366,10 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                 <p> Copied. Paste this on Rust Console to Join.</p>
               </div>
             )} */}
-        <a href='https://rust.glitchbox.net' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+        <a href='https://dynasties.glitchedrealms.com' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
            <LazyLoadImage
              effect="blur"  height="auto"
-      width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1746515439/Glitched%20Realms/Buttons/dggfgr3qasrz57dpuid0.png' className=' md:w-40 w-32' />
+      width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1746515439/Glitched%20Realms/Buttons/dggfgr3qasrz57dpuid0.png' className=' md:w-40 w-28' />
         </a>
       </div>
                       

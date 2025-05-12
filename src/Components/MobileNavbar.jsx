@@ -11,7 +11,7 @@ const MobileNavbar = () => {
         setIsOpen((prevState) => !prevState)
     }
   return (
-    <header className='md:hidden block sticky top-0 z-[888] bg-[#101010b0]'>
+    <header className='md:hidden block sticky top-0 z-[888] bg-[#101010]'>
     <div className="flex items-center justify-between px-4 py-3 sticky top-0 z-40 ">
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto px-4">
       <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
@@ -30,7 +30,7 @@ const MobileNavbar = () => {
                 open={isOpen}
                 onClose={toggleDrawer}
                 direction='right'
-                className='!h-full !bg-[#131212] !w-full'
+                className='!h-full !bg-[#080808] !w-full'
   >
   <div className="z-40 p-4 h-screen overflow-hidden w-[24rem] text-white">
     <button onClick={toggleDrawer} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text- rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
@@ -41,37 +41,59 @@ const MobileNavbar = () => {
     <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
       <img src="/navbar-logo.webp" alt="logo" className="w-32" />
     </a>
-      <ul onClick={toggleDrawer} className="space-y-6 font-bold text-center text-xl">
-      <li>
+      <ul className="space-y-6 font-bold text-center text-xl">
+      <li onClick={toggleDrawer}>
 
         <a href='/#' className="mr-5 hover:text-gray-300 hover:scale-110">Home</a>
       </li>
 
-      <li>
+      <li onClick={toggleDrawer}>
 
       <a href='/#tiles' className="mr-5 hover:text-gray-300 hover:scale-110">Games</a>
       </li>
-      <li>
+      <li onClick={toggleDrawer}>
 
 
       <a href='/#hosting' className="mr-5 hover:text-gray-300 hover:scale-110">Hosting</a>
       </li>
-        <li>
+        <li onClick={toggleDrawer}>
       <a href='/#work' className="mr-5 hover:text-gray-300 hover:scale-110">Team</a>     
         </li>
       <li className="relative group">
         <div className="mr-5 hover:text-gray-300">
-          <span>Leaderboards</span>
-          <div className=" w-full p-4">
-            <div className=" flex justify-center items-center">
-              <img src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745681011/realms_apufac.png" alt="Realms" className="w-32 h-auto object-contain " />
-            </div>
-            <a href="/#tiles" className="dropdown-item block py-2 text-gold text-yellow-400">Hall of Fame</a>
-            <a href="/#tiles" className="dropdown-item block py-2 text-red-500 hover:text-red-400">Hall of Shame (Bans)</a>
+          <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={(e) => {
+            e.currentTarget.nextElementSibling.classList.toggle('hidden');
+          }}>
+            <span>Leaderboards</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <div className=" flex flex-col gap-2 mt-2 ml-4">
+            <a href="/#tiles" className="text-yellow-400 hover:text-yellow-300">Hall of Fame</a>
+            <a href="/#tiles" className="text-red-500 hover:text-red-400">Hall of Shame (Bans)</a>
           </div>
         </div>
       </li>
-    
+      <li className="relative group">
+        <div className="mr-5 hover:text-gray-300">
+          <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={(e) => {
+            e.currentTarget.nextElementSibling.classList.toggle('hidden');
+          }}>
+            <span>Vote for our Servers</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <div className="flex flex-col gap-2 mt-2 ml-4">
+            <a href="https://minecraft-mp.com/vote" className="text-gray-300 hover:text-white">Vote Site 1</a>
+            <a href="https://minecraftservers.org/vote" className="text-gray-300 hover:text-white">Vote Site 2</a>
+            <a href="https://topg.org/minecraft-servers/vote" className="text-gray-300 hover:text-white">Vote Site 3</a>
+            <a href="https://minecraft-server-list.com/vote" className="text-gray-300 hover:text-white">Vote Site 4</a>
+            <a href="https://minecraft-server.net/vote" className="text-gray-300 hover:text-white">Vote Site 5</a>
+          </div>
+        </div>
+      </li>
       </ul>
      
     </div>

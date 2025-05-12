@@ -11,7 +11,7 @@ const Footer = () => {
     <>
    <footer className="text-white bg-[#141414] body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-  <a href="/" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
+  <a href="https://glitchbox.net" className="flex title-font font-bold items-center text-white text-xl mr-2 mb-4 md:mb-0">
    <LazyLoadImage
                effect="blur"  height="auto"
         width="100%" src='/footer-logo.webp' className='w-32' />
@@ -20,7 +20,7 @@ const Footer = () => {
       <a href="https://glitchbox.net" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Powered by GLITCHBOX</a>
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start gap-2">
-    <a href='https://discord.gg/nmmr3CHRZJ' target='_blank'>
+    <a href='https://dc.glitchbox.net' target='_blank'>
      <FaDiscord size={20} />
     </a>
     <a href='https://x.com/glitchedreamsofficial' target='_blank'>
