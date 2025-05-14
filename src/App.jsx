@@ -71,8 +71,7 @@ data-aos-duration="1000">
       height={'100%'} 
       width={'100%'} 
       className="object-contain object-center block rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:opacity-10" 
-      src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/Tile_survival_nh2lja.png" 
+      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/Tile_survival_nh2lja.png" 
     />
     <div className="text-center px-4 absolute z-10 w-full">
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
@@ -116,7 +115,7 @@ data-aos-duration="1200">
     <LazyLoadImage
        effect="blur"  height="100%"
 width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_lifesteal_vghlm2.png" />
+wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_lifesteal_vghlm2.png" />
     <div className="text-center px-4 absolute z-10 w-full">
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
@@ -157,19 +156,19 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                   <LazyLoadImage
                      effect="blur"  height="100%"
       width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844651/tile_skyblock_umw16u.png" />
+      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844651/tile_skyblock_umw16u.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
-      <li>Catch, train, and battle</li>
-      <li>Official-style combat with moves and abilities</li>
-      <li>Trade and battle with friends</li>
-      <li>Craft and use tools like in the games</li>
-      <li>Active Admins</li>
-      <li>Lag-free Experience</li>
+      <li>Island Upgrades</li>
+      <li>Ore Generators</li>
+      <li>Missions / Quests</li>
+      <li>Shop & Economy</li>
+      <li>Custom Enchants</li>
+      <li>Minions</li>
       </ul>
       <span>& more</span>
 
@@ -195,7 +194,7 @@ data-aos-duration="1200">
     <LazyLoadImage
        effect="blur"  height="100%"
 width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_rpg_dh3gdr.png" />
+wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_rpg_dh3gdr.png" />
     <div className="text-center px-4 absolute z-10 w-full">
     <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
@@ -235,7 +234,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                   <LazyLoadImage
                      effect="blur"  height="100%"
       width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:opacity-10" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/gens_a4ku3r.png" />
+      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/gens_a4ku3r.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
@@ -276,15 +275,14 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                     height={'100%'} 
                     width={'100%'} 
                     className="object-contain object-center block rounded-lg transition-all"
-                    wrapperClassName="w-full h-full group-hover:opacity-10" 
-                    src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_prison_t66xvl.png" 
+                    wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_prison_t66xvl.png" 
                   />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                 <div>
                   <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
-                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
+                  <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[8px] ">
                 <li>Pickaxe</li>
                 <li>Enchanter</li>
                 <li>Rank Progression</li>
@@ -320,7 +318,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
 
             </div>
             
-            <div className="flex md:h-[310px] hover:md:h-[310px] h-auto flex-wrap w-full mb-4 group rounded-lg transition-all justify-center items-center md:py-2 relative" data-aos="fade-up"
+            <div className="flex md:h-[310px] hover:md:h-[310px] h-auto flex-wrap w-full mb-4 group rounded-lg transition-all justify-center items-center md:py-2 relative md:hover:border-0 hover:border" data-aos="fade-up"
      data-aos-easing="ease-in"
      data-aos-offset="100"
      data-aos-duration="1000">
@@ -329,23 +327,23 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
               <LazyLoadImage
                  effect="blur" height="100%"
       width="100%" alt="gallery" className="md:block !w-full rounded-lg !h-full object-center !transition-all " 
-      wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-10 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/tile_dynasties_2_jeisrz.png" />
+      wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-30 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/tile_dynasties_2_jeisrz.png" />
      </div>
      <div className='relative h-full w-full md:hidden block'>
 
               <LazyLoadImage
                  effect="blur"  height="100%"
       width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center rounded-lg !transition-all " 
-      wrapperClassName="block w-full h-full group-hover:opacity-10 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1746036951/Glitched%20Realms/Tiles/Mobile%20Tile/ayfdi8a371feexawqfpp.png" />
+      wrapperClassName="block w-full h-full group-hover:opacity-20 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1746036951/Glitched%20Realms/Tiles/Mobile%20Tile/ayfdi8a371feexawqfpp.png" />
       </div>
-              <div className="md:text-center px-4 absolute z-10 w-full">
+              <div className="md:text-center px-4 absolute z-10 w-full ">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
                     <p className="leading-relaxed">Skateboard +1 mustache fixie paleo lumbersexual.</p> */}
                     <div className='md:justify-start md:items-center h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
                       <div>
                         <h1 className=' md:text-xl text-md font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
-                        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[10px] ">
+                        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[8px] ">
         <li>Choose your Tribe</li>
         <li>Build your Empire</li>
         <li>Engage in Battles</li>

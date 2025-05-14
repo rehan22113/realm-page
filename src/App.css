@@ -38,7 +38,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  color: #000;
+  color: #cccccc;
   font-family: 'Gilroy', 'Poppins', sans-serif; /* First try Gilroy, else Poppins */
   font-size: 16px;
   font-weight: bold;

@@ -61,7 +61,7 @@ const MobileNavbar = () => {
         </li>
       <li className="relative group">
         <div className="mr-5 hover:text-gray-300">
-          <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={(e) => {
+          <div className="flex items-center justify-center gap-2 cursor-pointer ml-8" onClick={(e) => {
             e.currentTarget.nextElementSibling.classList.toggle('hidden');
           }}>
             <span>Leaderboards</span>
@@ -69,7 +69,7 @@ const MobileNavbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </div>
-          <div className=" flex flex-col gap-2 mt-2 ml-4">
+          <div className="hidden flex flex-col gap-2 mt-2 ml-4">
             <a href="/#tiles" className="text-yellow-400 hover:text-yellow-300">Hall of Fame</a>
             <a href="/#tiles" className="text-red-500 hover:text-red-400">Hall of Shame (Bans)</a>
           </div>
@@ -77,7 +77,7 @@ const MobileNavbar = () => {
       </li>
       <li className="relative group">
         <div className="mr-5 hover:text-gray-300">
-          <div className="flex items-center justify-center gap-2 cursor-pointer" onClick={(e) => {
+          <div className="flex items-center justify-center gap-2 cursor-pointer ml-8" onClick={(e) => {
             e.currentTarget.nextElementSibling.classList.toggle('hidden');
           }}>
             <span>Vote for our Servers</span>
@@ -85,7 +85,7 @@ const MobileNavbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
             </svg>
           </div>
-          <div className="flex flex-col gap-2 mt-2 ml-4">
+          <div className="hidden flex flex-col gap-2 mt-2 ml-4">
             <a href="https://minecraft-mp.com/vote" className="text-gray-300 hover:text-white">Vote Site 1</a>
             <a href="https://minecraftservers.org/vote" className="text-gray-300 hover:text-white">Vote Site 2</a>
             <a href="https://topg.org/minecraft-servers/vote" className="text-gray-300 hover:text-white">Vote Site 3</a>
