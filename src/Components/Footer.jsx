@@ -23,16 +23,16 @@ const Footer = () => {
     <a href='https://dc.glitchbox.net' target='_blank'>
      <FaDiscord size={20} />
     </a>
-    <a href='https://x.com/glitchedreamsofficial' target='_blank'>
+    <a href='http://x.com/glitchboxnetwork' target='_blank'>
     <FaXTwitter size={20}/>
     </a>
-    <a href='https://www.instagram.com/glitchedreamsofficial' target='_blank'>
+    <a href='https://www.instagram.com/glitchboxnetwork/' target='_blank'>
     <FaInstagram size={20} />
     </a>
-    <a href='https://www.linkedin.com/glitchedreamsofficial' target='_blank'>
+    <a href='https://www.linkedin.com/company/glitchboxnetwork/' target='_blank'>
     <FaLinkedin size={20} />
     </a>
-    <a href='http://facebook.com/glitchedreamsofficial' target='_blank'>
+    <a href='https://www.facebook.com/glitchboxnetwork' target='_blank'>
     <FaFacebook size={20} />
     </a>
      

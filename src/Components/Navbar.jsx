@@ -34,6 +34,7 @@ const Navbar = () => {
       <a href='/#' className="px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">Home</a>
       <a href='/#tiles' className="px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">Games</a>
       <a href='/#hosting' className="px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">Hosting</a>
+      <a href='/#work' className="px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">Team</a>
       <div className="leaderboard-dropdown px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">
         <span>Leaderboards</span>
         <div className="dropdown-content pb-8">
@@ -44,11 +45,24 @@ const Navbar = () => {
             <span className="gold">Hall of Fame</span>
           </a>
           <a href="/#tiles" className="dropdown-item">
-            <span className="red">Hall of Shame (Bans)</span>
+            <span className="red">Hall of Shame</span>
           </a>
         </div>
       </div>
-      <a href='/#work' className="px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">Team</a>
+
+      <div className="leaderboard-dropdown px-4 py-2 mx-2 hover:bg-[#1F1F1F] rounded-md transition-all duration-300">
+        <span>Merch</span>
+        <div className="dropdown-content">
+          <div className="dropdown-header h-[200px]">
+          <a href='https://excelr8.in/product-category/clothing/collab/gbxe/' target='_blank'>
+
+            <img src="https://res.cloudinary.com/djxzpihss/image/upload/v1747415445/Websites/Glitched%20Realms/sn3rfmmkqu1eababcd26.webp" alt="Realms" className=" !max-w-full !w-full !h-full object-contain py-2" />
+          </a>
+          </div>
+         
+        </div>
+      </div>
+    
      
     </nav>
     <div className='flex md:mt-0 mt-2 '>

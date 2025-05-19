@@ -59,6 +59,9 @@ const MobileNavbar = () => {
         <li onClick={toggleDrawer}>
       <a href='/#work' className="mr-5 hover:text-gray-300 hover:scale-110">Team</a>     
         </li>
+      <li onClick={toggleDrawer}>
+        <a  href='https://excelr8.in/product-category/clothing/collab/gbxe/' target='_blank'>Merch</a>
+      </li>
       <li className="relative group">
         <div className="mr-5 hover:text-gray-300">
           <div className="flex items-center justify-center gap-2 cursor-pointer ml-8" onClick={(e) => {
@@ -71,7 +74,7 @@ const MobileNavbar = () => {
           </div>
           <div className="hidden flex flex-col gap-2 mt-2 ml-4">
             <a href="/#tiles" className="text-yellow-400 hover:text-yellow-300">Hall of Fame</a>
-            <a href="/#tiles" className="text-red-500 hover:text-red-400">Hall of Shame (Bans)</a>
+            <a href="/#tiles" className="text-red-500 hover:text-red-400">Hall of Shame</a>
           </div>
         </div>
       </li>
@@ -93,6 +96,9 @@ const MobileNavbar = () => {
             <a href="https://minecraft-server.net/vote" className="text-gray-300 hover:text-white">Vote Site 5</a>
           </div>
         </div>
+      </li>
+      <li onClick={toggleDrawer}>
+        <a  href='https://excelr8.in/product-category/clothing/collab/gbxe/' target='_blank'>Merch</a>
       </li>
       </ul>
      
