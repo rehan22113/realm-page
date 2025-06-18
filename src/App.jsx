@@ -64,7 +64,7 @@ const App = () => {
 <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-right"
 data-aos-easing="ease-in-sine"
 data-aos-duration="1000">
-  <div className="flex flex-wrap justify-center w-full h-full items-center relative group-hover:border group-hover:rounded-md">
+  <div className="flex flex-wrap justify-center bg-black w-full h-full items-center relative group-hover:border group-hover:rounded-md">
     <LazyLoadImage
       effect="blur" 
       alt="gallery" 
@@ -78,7 +78,7 @@ data-aos-duration="1000">
 
   <div>
     <h1 className=' hidden md:inline text-xl font-extrabold border-b-2 border-blue-400'>SERVER INFO</h1>
-    <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
+    <ul className="list-disc list-inside text-white !leading-[0.2] mt-2 font-bold lg:text-base text-[4px] ">
   <li>Factories</li>
   <li>PvP Arena</li>
   <li>Jobs</li>
@@ -91,7 +91,7 @@ data-aos-duration="1000">
 
   </div>
 
-<div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+<div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
 <div className=' relative'>
 
 <a href='https://shop.glitchbox.net/' target="_blank" className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
@@ -111,86 +111,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
 <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
 data-aos-easing="ease-in-sine"
 data-aos-duration="1200">
-  <div className="flex flex-wrap justify-center w-full h-full items-center relative hover:border rounded-md">
-    <LazyLoadImage
-       effect="blur"  height="100%"
-width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_lifesteal_vghlm2.png" />
-    <div className="text-center px-4 absolute z-10 w-full">
-    <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
-
-<div>
-<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
-<ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
-<li>Premium LifestealCore</li>
-<li>Custom Enchants</li>
-<li>PvP Arena</li>
-<li>Abilities</li>
-<li>KOTH</li>
-<li>Leaderboards</li>
-<li>AntiCheat</li>
-</ul>
-<span>...& more</span>
-
-</div>
-<div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
-<a href='https://shop.glitchbox.net/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
-<LazyLoadImage
-effect="blur"  height="auto"
-width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
-</a>
-</div>
-</div>
-    </div>
-  </div>
-</div>
-
-
-          </div>
-          <div className="flex md:flex-row flex-col lg:gap-0 gap-2 mb-2 -mx-2">
-
-          <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
-     data-aos-easing="ease-in-sine"
-     data-aos-duration="1200">
-                <div className="flex flex-wrap justify-center w-full h-full items-center relative hover:border rounded-md">
-                  <LazyLoadImage
-                     effect="blur"  height="100%"
-      width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844651/tile_skyblock_umw16u.png" />
-                  <div className="text-center px-4 absolute z-10 w-full">
-                  <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
-
-      <div>
-        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
-        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
-      <li>Island Upgrades</li>
-      <li>Ore Generators</li>
-      <li>Missions / Quests</li>
-      <li>Shop & Economy</li>
-      <li>Custom Enchants</li>
-      <li>Minions</li>
-      </ul>
-      <span>& more</span>
-
-      </div>
-      <div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
-        <a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
-          <LazyLoadImage
-             effect="blur"  height="auto"
-      width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
-        </a>
-        
-      </div>
-      </div>
-                  </div>
-                </div>
-              </div>
-
-
-<div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
-data-aos-easing="ease-in-sine"
-data-aos-duration="1200">
-  <div className="flex flex-wrap justify-center w-full h-full items-center relative hover:border rounded-md">
+  <div className="flex flex-wrap bg-black justify-center w-full h-full items-center relative hover:border rounded-md">
     <LazyLoadImage
        effect="blur"  height="100%"
 width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
@@ -224,35 +145,118 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
 </div>
 
 
+
+
           </div>
           <div className="flex md:flex-row flex-col lg:gap-0 gap-2 mb-2 -mx-2">
 
           <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1200">
-                <div className="flex flex-wrap justify-center w-full h-full items-center relative hover:border rounded-md">
+                <div className="flex flex-wrap bg-black justify-center w-full h-full items-center relative hover:border rounded-md">
                   <LazyLoadImage
                      effect="blur"  height="100%"
       width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
-      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/gens_a4ku3r.png" />
+      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844651/tile_skyblock_umw16u.png" />
                   <div className="text-center px-4 absolute z-10 w-full">
                   <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
 
       <div>
         <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
-      <li>Upgradeable Generators</li>
-      <li>Auto Pickup & AutoSell</li>
-      <li>Token System</li>
-      <li>Skills & Abilities</li>
-      <li>Custom Shops</li>
-      <li>Leaderboards</li>
-      <li>Plot System</li>
+      <li>Island Upgrades</li>
+      <li>Ore Generators</li>
+      <li>Missions / Quests</li>
+      <li>Shop & Economy</li>
+      <li>Custom Enchants</li>
+      <li>Minions</li>
+      </ul>
+      <span>& more</span>
+
+      </div>
+      <div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+        <a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+          <LazyLoadImage
+             effect="blur"  height="auto"
+      width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
+        </a>
+        
+      </div>
+      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
+data-aos-easing="ease-in-sine"
+data-aos-duration="1200">
+  <div className="flex flex-wrap justify-center bg-black w-full h-full items-center relative hover:border rounded-md">
+    <LazyLoadImage
+       effect="blur"  height="100%"
+width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
+wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844649/tile_lifesteal_vghlm2.png" />
+    <div className="text-center px-4 absolute z-10 w-full">
+    <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+
+<div>
+<h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
+<ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
+<li>Premium LifestealCore</li>
+<li>Custom Enchants</li>
+<li>PvP Arena</li>
+<li>Abilities</li>
+<li>KOTH</li>
+<li>Leaderboards</li>
+<li>AntiCheat</li>
+</ul>
+<span>...& more</span>
+
+</div>
+<div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+<a href='https://shop.glitchbox.net/' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+<LazyLoadImage
+effect="blur"  height="auto"
+width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/Glitched%20Realms%20Shop/lnuz6m0lxnpoqdvrz0xy.png' className=' lg:w-40 w-32' />
+</a>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+          </div>
+          <div className="flex md:flex-row flex-col lg:gap-0 gap-2 mb-2 -mx-2">
+
+          <div className="px-2 md:w-1/2 w-full 2xl:h-[320px] lg:h-[260px] h-auto group" data-aos="fade-left"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1200">
+                <div className="flex flex-wrap bg-black justify-center w-full h-full items-center relative hover:border rounded-md">
+                  <LazyLoadImage
+                     effect="blur"  height="100%"
+      width="100%" alt="gallery" className="object-contain h-full w-full object-center block rounded-lg transition-all"
+      wrapperClassName="w-full h-full group-hover:opacity-20" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1750251309/tile_bendings_copy_assks6.webp" />
+                  <div className="text-center px-4 absolute z-10 w-full">
+                  <div className='justify-start items-center 2xl:h-[300px] lg:h-[220px] h-full relative text-left group-hover:flex hidden gap-3 px-2'>
+
+      <div>
+        <h1 className=' text-xl font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
+        <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold lg:text-base text-[10px] ">
+      <li>Elemental Mastery Progression</li>
+      <li>Element Auto-Pickup & Auto-Sell</li>
+      <li>Chi & Token System</li>
+      <li>Skills & Advanced Abilities</li>
+      <li>Custom Elemental Shops</li>
+      <li>Global & Element Leaderboards</li>
+      <li>Plot-Based Training Ground</li>
       </ul>
       <span>....& more</span>
 
       </div>
-      <div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
         <a href='https://shop.glitchbox.net' target='_blank' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
           <LazyLoadImage
              effect="blur"  height="auto"
@@ -268,7 +272,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
               <div className="px-2 md:w-1/2 w-full 2xl:h-[324px] lg:h-[264px] h-auto group" data-aos="fade-right"
      data-aos-easing="ease-in-sine"
      data-aos-duration="1000">
-                <div className="flex flex-wrap justify-center w-full h-full items-center relative group-hover:border group-hover:rounded-md">
+                <div className="flex flex-wrap bg-black justify-center w-full h-full items-center relative group-hover:border group-hover:rounded-md">
                   <LazyLoadImage
                     effect="blur" 
                     alt="gallery" 
@@ -296,7 +300,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
 
                 </div>
 
-      <div className=' absolute bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
+      <div className=' absolute bottom-0 md:right-0 -right-2 flex flex-col justify-end items-end'>
       <div className=' relative'>
 
         <a href='https://shop.glitchbox.net/' target="_blank" className=" hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
@@ -322,19 +326,19 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
      data-aos-easing="ease-in"
      data-aos-offset="100"
      data-aos-duration="1000">
-     <div className='relative h-full w-full md:block hidden group-hover:border rounded-lg'>
+     <div className='relative h-full w-full bg-black md:block hidden group-hover:border rounded-lg'>
 
               <LazyLoadImage
                  effect="blur" height="100%"
       width="100%" alt="gallery" className="md:block !w-full rounded-lg !h-full object-center !transition-all " 
-      wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-30 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1745844650/tile_dynasties_2_jeisrz.png" />
+      wrapperClassName="hidden w-full h-full hover:transition-all group-hover:opacity-30 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1750251295/tile_multi_modes_copy_dvohra.webp" />
      </div>
-     <div className='relative h-full w-full md:hidden block'>
+     <div className='relative h-full w-full bg-black md:hidden block'>
 
               <LazyLoadImage
                  effect="blur"  height="100%"
       width="100%" alt="gallery" className="md:hidden !w-full !h-full object-center rounded-lg !transition-all " 
-      wrapperClassName="block w-full h-full group-hover:opacity-20 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1746036951/Glitched%20Realms/Tiles/Mobile%20Tile/ayfdi8a371feexawqfpp.png" />
+      wrapperClassName="block w-full h-full group-hover:opacity-20 delay-200" src="https://res.cloudinary.com/dsbups4jj/image/upload/v1750251324/tile_multi_modes_2_copy_w7u8h6.webp" />
       </div>
               <div className="md:text-center px-4 absolute z-10 w-full ">
                     {/* <h2 className="text-xl text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
@@ -344,18 +348,18 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                       <div>
                         <h1 className=' md:text-xl text-md font-extrabold border-b-2 border-blue-400 hidden md:inline'>SERVER INFO</h1>
                         <ul className="list-disc list-inside text-white leading-tight mt-2 font-bold md:text-base text-[8px] ">
-        <li>Choose your Tribe</li>
-        <li>Build your Empire</li>
-        <li>Engage in Battles</li>
-        <li>Fight to Survive</li>
-        <li>Team up with players, strategize</li>
-        <li>Classic Gameplay</li>
-        <li>Relive the Nostalgia</li>
+        <li>Multi-Mode SMP</li>
+        <li>No VIP</li>
+        <li>No Premium</li>
+        <li>No Webshop</li>
+        <li>Completely Free to Play</li>
+        <li>Minigamesy</li>
+        <li>PvP</li>
       </ul>
 
                       </div>
 
-                      <div className=' absolute -md:bottom-10 -bottom-2 md:right-0 -right-2 flex flex-col justify-end items-end'>
+                      <div className=' absolute -md:bottom-10 -bottom-4 md:right-0 -right-2 flex flex-col justify-end items-end'>
 
                       <div className=' relative'>
 
@@ -364,7 +368,7 @@ width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1740156130/
                 <p> Copied. Paste this on Rust Console to Join.</p>
               </div>
             )} */}
-        <a href='https://dynasties.glitchedrealms.com' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
+        <a href='https://shop.glitchbox.net/pages/mclite' className="hover:scale-105 transition-all mt-3 text-indigo-500 inline-flex" >
            <LazyLoadImage
              effect="blur"  height="auto"
       width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1746515439/Glitched%20Realms/Buttons/dggfgr3qasrz57dpuid0.png' className=' md:w-40 w-28' />

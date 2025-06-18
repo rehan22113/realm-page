@@ -71,7 +71,7 @@ const Navbar = () => {
      
      </a> */}
       {/* vote now button */}
-     <button onClick={() => setIsVoteModalOpen(true)} className="mt-3 text-indigo-500 inline-flex hover:scale-105 transition-all">
+     <button onClick={() => setIsVoteModalOpen(true)} className=" text-indigo-500 inline-flex hover:scale-105 transition-all">
           <LazyLoadImage
              effect="blur"  height="auto"
       width="100%" src='https://res.cloudinary.com/dsbups4jj/image/upload/v1745680774/cta_vote_xwfykt.png' className=' lg:w-40 w-32' />

@@ -59,9 +59,6 @@ const MobileNavbar = () => {
         <li onClick={toggleDrawer}>
       <a href='/#work' className="mr-5 hover:text-gray-300 hover:scale-110">Team</a>     
         </li>
-      <li onClick={toggleDrawer}>
-        <a  href='https://excelr8.in/product-category/clothing/collab/gbxe/' target='_blank'>Merch</a>
-      </li>
       <li className="relative group">
         <div className="mr-5 hover:text-gray-300">
           <div className="flex items-center justify-center gap-2 cursor-pointer ml-8" onClick={(e) => {
